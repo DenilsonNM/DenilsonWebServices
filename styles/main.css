@@ -4,11 +4,11 @@
   --color-3: #3792ee;
   --color-4: #252525;
   --color-4-t: #252525d2;
-  --color-5: #f1f1f1;
+  --color-5: #dddddd;
   --color-6: #353535;
   --color-7: #ffffff;
   --color-8: #000000;
-  --color-8-t: #000000d5;
+  --color-8-t: #00000094;
 }
 
 /* ------------------------------------- */
@@ -207,8 +207,55 @@ main {
 
 .article_main figure {
   filter: drop-shadow(0px 0px 150px var(--color-7));
+  z-index: 10;
 }
 
 main h2 {
   font-size: 2rem;
+}
+
+/* ------------------------------------- */
+
+.section_beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+.articles_beneficios {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.articles_beneficios article {
+  background-color: var(--color-6);
+  padding: 2rem;
+  width: 30%;
+  border-radius: 0 0 15px 15px;
+  transition: all .15s linear;
+}
+
+.articles_beneficios i {
+  font-size: 1.5rem;
+}
+
+.articlered {
+  border-top: 1rem solid var(--color-1);
+}
+
+.articleblue {
+  border-top: 1rem solid var(--color-3);
+}
+
+.articleyellow {
+  border-top: 1rem solid var(--color-2);
+}
+
+.articles_beneficios article:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px var(--color-8-t);
 }
