@@ -259,3 +259,38 @@ main h2 {
   transform: scale(1.05);
   box-shadow: 0px 0px 8px var(--color-8-t);
 }
+
+/* ------------------------------------- */
+
+.section_infoextra {
+  background-color: var(--color-6);
+  text-align: center;
+  padding: 2rem;
+}
+
+.article_infoextra {
+  display: flex;
+  padding: 2rem 4rem;
+  text-align: right;
+  gap: 2rem;
+}
+
+.article_infoextra p {
+  background-color: var(--color-4);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.article_infoextra a {
+  color: var(--color-4);
+  background-color: var(--color-2);
+  padding: .6rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.article_infoextra figure {
+  filter: drop-shadow(0px 0px 150px var(--color-7));
+  z-index: 10;
+}
