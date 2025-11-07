@@ -35,6 +35,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: var(--color-5);
   background-color: var(--color-4);
+  font-size: 1.1rem;
 }
 
 h1,
@@ -62,6 +63,7 @@ img {
 
 figure {
   transition: all .15s linear;
+
 }
 
 figure img:hover {
@@ -71,22 +73,32 @@ figure img:hover {
 ul {
   list-style: none;
   padding: 0;
+  line-height: 2rem;
 }
 
 /* ------------------------------------- */
 
 .button_yellow {
-  color: var(--color-4);
+  color: var(--color-8);
   background-color: var(--color-2);
   padding: .6rem 1rem;
   border-radius: 10px;
   font-weight: bold;
+
 }
 
 .button_yellow:hover {
-  color: var(--color-5);
-  box-shadow: 0px 0px 10px var(--color-8-t);
+  color: var(--color-6);
+  /* box-shadow: 0px 0px 10px var(--color-8-t); */
   transform: scale(1.02);
+  filter: drop-shadow(0px 0px 150px var(--color-2));
+}
+
+.paragraph_bgdark {
+  background-color: var(--color-4);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
 }
 
 /* ------------------------------------- */
@@ -208,16 +220,10 @@ main {
   padding: 1rem 4rem;
 }
 
-.div_art_main p {
-  background-color: var(--color-4);
-  border-radius: 20px;
-  padding: 2rem;
-}
-
-
 .article_main figure {
-  filter: drop-shadow(0px 0px 150px var(--color-7));
+  filter: drop-shadow(0px 0px 150px var(--color-1));
   z-index: 10;
+  width: clamp(300px, 70vh, 580px);
 }
 
 main h2 {
@@ -256,19 +262,22 @@ main h2 {
 
 .articlered {
   border-top: 1rem solid var(--color-1);
+  /* filter: drop-shadow(0px 0px 150px var(--color-1)); */
 }
 
 .articleblue {
   border-top: 1rem solid var(--color-3);
+  /* filter: drop-shadow(0px 0px 150px var(--color-3)); */
 }
 
 .articleyellow {
   border-top: 1rem solid var(--color-2);
+  /* filter: drop-shadow(0px 0px 150px var(--color-2)); */
 }
 
 .articles_beneficios article:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 8px var(--color-8-t);
+  z-index: 10;
 }
 
 /* ------------------------------------- */
@@ -286,14 +295,31 @@ main h2 {
   gap: 2rem;
 }
 
-.article_infoextra p {
-  background-color: var(--color-4);
-  border-radius: 20px;
-  padding: 2rem;
+.article_infoextra figure {
+  filter: drop-shadow(0px 0px 150px var(--color-3));
+  z-index: 10;
+  width: clamp(300px, 70vh, 580px);
+}
+
+.div_art_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------- */
+
+.article_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: left;
 }
 
-.article_infoextra figure {
-  filter: drop-shadow(0px 0px 150px var(--color-7));
+.article_card figure {
+  filter: drop-shadow(0px 0px 150px var(--color-2));
   z-index: 10;
+  width: 30%;
 }
