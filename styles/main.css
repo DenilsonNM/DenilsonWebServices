@@ -76,6 +76,11 @@ ul {
   line-height: 2rem;
 }
 
+span {
+  font-weight: bold;
+  color: var(--color-7);
+}
+
 /* ------------------------------------- */
 
 .button_yellow {
