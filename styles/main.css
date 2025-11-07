@@ -276,7 +276,7 @@ main h2 {
 }
 
 .articles_beneficios article:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   z-index: 10;
 }
 
