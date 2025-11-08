@@ -9,5 +9,30 @@
 .article_services figure {
   filter: drop-shadow(0px 0px 150px var(--color-2));
   z-index: 10;
-  width: clamp(500px, 100vh, 900px);
+  /* width: clamp(500px, 100vh, 900px); */
+  width: clamp(300px, 70vh, 580px);
+}
+
+/* ------------------------------------- */
+
+.articles_beneficios {
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.articles_beneficios article {
+  width: 45%;
+  /* text-align: left; */
+}
+
+.ul_article_services {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  text-align: left;
+}
+
+.ul_article_services li {
+  border-top: 1px solid var(--color-5);
+  color: var(--color-7);
 }
