@@ -271,7 +271,6 @@ main h2 {
 
 .articlered {
   border-top: 1rem solid var(--color-1);
-  /* filter: drop-shadow(0px 0px 150px var(--color-1)); */
 }
 
 .articleblue {
