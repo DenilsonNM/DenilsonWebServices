@@ -46,3 +46,9 @@
   color: var(--color-7);
   font-weight: bold;
 }
+
+/* ------------------------------------- */
+
+.section_pregfrec {
+  background-color: var(--color-6);
+}
