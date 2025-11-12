@@ -220,6 +220,24 @@ header {
   filter: drop-shadow(0px 0px 20px var(--color-7));
 }
 
+
+.figurered {
+  filter: drop-shadow(0px 0px 100px var(--color-1));
+}
+
+.figureyellow {
+  filter: drop-shadow(0px 0px 100px var(--color-2));
+}
+
+.figureblue {
+  filter: drop-shadow(0px 0px 100px var(--color-3));
+}
+
+.figurewhite {
+  filter: drop-shadow(0px 0px 100px var(--color-5));
+}
+
+
 /* ------------------------------------- */
 
 main {
@@ -238,7 +256,6 @@ main {
 }
 
 .article_main figure {
-  filter: drop-shadow(0px 0px 150px var(--color-1));
   z-index: 10;
   width: clamp(300px, 70vh, 580px);
 }
@@ -314,7 +331,6 @@ main h2 {
 }
 
 .article_infoextra figure {
-  filter: drop-shadow(0px 0px 150px var(--color-3));
   z-index: 10;
   width: clamp(300px, 70vh, 580px);
 }
@@ -337,7 +353,6 @@ main h2 {
 }
 
 .article_card figure {
-  filter: drop-shadow(0px 0px 150px var(--color-2));
   z-index: 10;
   width: 30%;
 }
