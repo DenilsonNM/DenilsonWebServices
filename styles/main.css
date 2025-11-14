@@ -8,7 +8,7 @@
   --color-6: #353535;
   --color-7: #ffffff;
   --color-8: #000000;
-  --color-8-t: #00000094;
+  --color-8-t: #00000057;
 }
 
 /* ------------------------------------- */
@@ -90,12 +90,14 @@ span {
   padding: .6rem 1rem;
   border-radius: 10px;
   font-weight: bold;
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
 }
 
 .button_yellow:hover {
   /* box-shadow: 0px 0px 10px var(--color-8-t); */
   transform: scale(1.02);
-  filter: drop-shadow(0px 0px 150px var(--color-2));
+  color: var(--color-6);
+  /* filter: drop-shadow(0px 0px 150px var(--color-2)); */
 }
 
 .paragraph_bgdark {
@@ -103,13 +105,15 @@ span {
   border-radius: 20px;
   padding: 2rem;
   text-align: left;
+  border-top: 5px solid var(--color-8-t);
+  border-left: 5px solid var(--color-8-t);
 }
 
 /* ------------------------------------- */
 
 header {
   background-color: var(--color-4-t);
-  box-shadow: 0px 0px 10px var(--color-8-t);
+  /* box-shadow: 0px 0px 10px var(--color-8-t); */
   position: sticky;
   top: 0;
   left: 0;
@@ -162,6 +166,7 @@ header {
 
 .section_main_parallax {
   position: relative;
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
 }
 
 .div_parallax {
@@ -197,39 +202,35 @@ header {
 
 .span1 {
   color: var(--color-1);
-  filter: drop-shadow(0px 0px 20px var(--color-1));
 }
 
 .span2 {
   color: var(--color-2);
-  filter: drop-shadow(0px 0px 20px var(--color-2));
 }
 
 .span3 {
   color: var(--color-3);
-  filter: drop-shadow(0px 0px 20px var(--color-3));
 }
 
 .span4 {
   color: var(--color-7);
-  filter: drop-shadow(0px 0px 20px var(--color-7));
 }
 
 
 .figurered {
-  filter: drop-shadow(0px 0px 100px var(--color-1));
+  filter: drop-shadow(5px 5px 0px var(--color-4));
 }
 
 .figureyellow {
-  filter: drop-shadow(0px 0px 100px var(--color-2));
+  filter: drop-shadow(5px 5px 0px var(--color-4));
 }
 
 .figureblue {
-  filter: drop-shadow(0px 0px 100px var(--color-3));
+  filter: drop-shadow(5px 5px 0px var(--color-4));
 }
 
 .figurewhite {
-  filter: drop-shadow(0px 0px 100px var(--color-5));
+  filter: drop-shadow(5px 5px 0px var(--color-4));
 }
 
 
@@ -239,6 +240,7 @@ main {
   background-color: var(--color-6);
   padding: 2rem;
   text-align: center;
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
 }
 
 .article_main {
@@ -283,6 +285,7 @@ main h2 {
   width: 26%;
   border-radius: 0 0 15px 15px;
   transition: all .15s linear;
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
 }
 
 .articles_beneficios i {
@@ -316,6 +319,7 @@ main h2 {
   background-color: var(--color-6);
   text-align: center;
   padding: 2rem;
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
 }
 
 .article_infoextra {
