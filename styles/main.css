@@ -2,7 +2,7 @@
   --color-1: #ee373a;
   --color-2: #eeb437;
   --color-3: #3792ee;
-  --color-4: #252525;
+  --color-4: #222222;
   --color-4-t: #252525d2;
   --color-5: #d0d0d0;
   --color-6: #353535;
@@ -177,7 +177,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(.40);
+  filter: brightness(.35);
 }
 
 .figure_parallax {
@@ -354,4 +354,8 @@ main h2 {
 .article_card figure {
   z-index: 10;
   width: 30%;
+}
+
+.article_card i {
+  color: var(--color-1);
 }

@@ -81,5 +81,12 @@
 .ul_detail {
   display: none;
   padding: 0 4rem;
-  list-style: inside;
+}
+
+.ul_detail li i {
+  color: var(--color-1);
+}
+
+.display {
+  display: block;
 }
