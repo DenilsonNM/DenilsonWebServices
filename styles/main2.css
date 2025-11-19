@@ -98,6 +98,35 @@ span {
   color: var(--color-6);
 }
 
+.span1 {
+  color: var(--color-1);
+}
+
+.span2 {
+  color: var(--color-2);
+}
+
+.span3 {
+  color: var(--color-3);
+}
+
+.span4 {
+  color: var(--color-7);
+}
+
+.paragraph_bgdark {
+  background-color: var(--color-4);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+  border-top: 5px solid var(--color-8-t);
+  border-left: 5px solid var(--color-8-t);
+}
+
+.figurewepage {
+  /* width: clamp(300px, 70vh, 580px); */
+  filter: drop-shadow(5px 5px 0px var(--color-4));
+}
 
 /* ------------------------------------- */
 
@@ -149,12 +178,59 @@ header {
   border-bottom: 4px solid var(--color-3);
 }
 
-@media screen and (max-width: 480px) {
+/* ------------------------------------- */
 
-  body {
-    font-size: 1rem;
-  }
+.section_main_parallax {
+  position: relative;
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
+}
 
-  
+.div_parallax {
+  background-image: url("/files/parallax1.webp");
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(.35);
+}
 
+.figure_parallax {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.figure_parallax img {
+  width: clamp(100px, 20vw, 140px);
+}
+
+.figure_parallax h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* ------------------------------------- */
+
+main {
+  background-color: var(--color-6);
+  padding: 2rem;
+  text-align: center;
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
+}
+
+.article_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 2rem;
+  padding: 1rem 4rem;
 }
