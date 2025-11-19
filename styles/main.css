@@ -2,7 +2,7 @@
   --color-1: #ee373a;
   --color-2: #eeb437;
   --color-3: #3792ee;
-  --color-4: #222222;
+  --color-4: #252525;
   --color-4-t: #252525d2;
   --color-5: #d0d0d0;
   --color-6: #353535;
@@ -358,4 +358,23 @@ main h2 {
 
 .article_card i {
   color: var(--color-1);
+}
+
+/* ------------------------------------- */
+
+footer {
+  background-color: var(--color-4-t);
+  /* box-shadow: 0px 0px 10px var(--color-8-t); */
+  padding: 2rem;
+  text-align: center;
+}
+
+.nav_footer_menu a {
+  color: var(--color-7);
+}
+
+.div_footer ul {
+  flex-direction: column;
+  gap: 0;
+  padding-top: 1rem;
 }
