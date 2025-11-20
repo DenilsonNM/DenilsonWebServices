@@ -128,6 +128,10 @@ span {
   filter: drop-shadow(5px 5px 0px var(--color-4));
 }
 
+.box_shadow {
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
+}
+
 /* ------------------------------------- */
 
 header {
@@ -182,7 +186,6 @@ header {
 
 .section_main_parallax {
   position: relative;
-  filter: drop-shadow(5px 5px 0px var(--color-8-t));
 }
 
 .div_parallax {
@@ -223,7 +226,6 @@ main {
   background-color: var(--color-6);
   padding: 2rem;
   text-align: center;
-  filter: drop-shadow(5px 5px 0px var(--color-8-t));
 }
 
 .article_main {
@@ -233,4 +235,81 @@ main {
   text-align: left;
   gap: 2rem;
   padding: 1rem 4rem;
+}
+
+/* ------------------------------------- */
+
+.section_beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+.articles_beneficios {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+.articles_beneficios article {
+  background-color: var(--color-6);
+  padding: 2rem;
+  width: 26%;
+  border-radius: 0 0 15px 15px;
+  transition: all .15s linear;
+}
+
+.articles_beneficios i {
+  font-size: 1.5rem;
+}
+
+.articlered {
+  border-top: 1rem solid var(--color-1);
+}
+
+.articleblue {
+  border-top: 1rem solid var(--color-3);
+}
+
+.articleyellow {
+  border-top: 1rem solid var(--color-2);
+}
+
+.articleneutral {
+  border-top: 1rem solid var(--color-7);
+}
+
+.articles_beneficios article:hover {
+  transform: scale(1.02);
+}
+
+/* ------------------------------------- */
+
+.section_infoextra {
+  background-color: var(--color-6);
+  text-align: center;
+  padding: 2rem;
+}
+
+.article_infoextra {
+  display: flex;
+  padding: 2rem 4rem;
+  text-align: right;
+  gap: 2rem;
+}
+
+.article_infoextra figure {
+  z-index: 10;
+  width: clamp(300px, 70vh, 580px);
+}
+
+.div_art_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

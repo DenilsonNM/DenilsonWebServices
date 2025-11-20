@@ -25,9 +25,30 @@
 
   .article_main {
     text-align: center;
-    gap: 1rem;
+    gap: 0rem;
     padding: 2rem 0 0 0;
     flex-direction: column;
+  }
+
+  /* ------------------------------------- */
+
+  .section_beneficios {
+    gap: 2rem;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .articles_beneficios {
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .articles_beneficios article {
+    padding: 1rem;
+    width: 80%;
   }
 
 }
