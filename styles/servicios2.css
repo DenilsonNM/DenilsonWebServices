@@ -37,6 +37,49 @@
   font-weight: bold;
 }
 
+/* ------------------------------------- */
+
+.section_pregfrec {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.div_sumary {
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all .15s linear;
+  background-color: var(--color-6);
+  filter: drop-shadow(5px 5px 0px var(--color-8-t));
+  border-radius: 10px;
+}
+
+.div_sumary i {
+  color: var(--color-3);
+}
+
+.div_sumary:hover,
+.div_sumary:hover i {
+  transform: scale(1.01);
+  color: var(--color-7);
+}
+
+.ul_detail {
+  display: none;
+  padding: 0 4rem;
+}
+
+.ul_detail li i {
+  color: var(--color-1);
+}
+
+.display {
+  display: block;
+}
 
 
 @media screen and (max-width: 480px) {
@@ -57,4 +100,15 @@
   .articles_beneficios article {
     width: 100%;
   }
+
+  /* ------------------------------------- */
+
+  .div_sumary {
+    border-radius: 0;
+  }
+
+  .ul_detail {
+    padding: 0 2rem;
+  }
+
 }
