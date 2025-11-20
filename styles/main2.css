@@ -318,3 +318,21 @@ main {
 .article_infoextra2 i {
   color: var(--color-1);
 }
+
+/* ------------------------------------- */
+
+footer {
+  background-color: var(--color-4-t);
+  padding: 2rem;
+  text-align: center;
+}
+
+.nav_footer_menu a {
+  color: var(--color-7);
+}
+
+.div_footer ul {
+  flex-direction: column;
+  gap: 0;
+  padding-top: 1rem;
+}
