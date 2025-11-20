@@ -51,4 +51,31 @@
     width: 80%;
   }
 
+  /* ------------------------------------- */
+
+
+  .article_infoextra {
+    padding: 0;
+    padding-top: 2rem;
+    gap: 0rem;
+    flex-direction: column-reverse;
+  }
+
+  .div_art_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article_infoextra2 {
+    padding: 0;
+    gap: 0rem;
+    flex-direction: column-reverse;
+  }
+
+  .article_infoextra2 i {
+    color: var(--color-1);
+  }
+
 }
