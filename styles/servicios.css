@@ -5,11 +5,6 @@
   align-items: center;
 }
 
-.article_services figure {
-  z-index: 10;
-  width: clamp(300px, 70vh, 580px);
-}
-
 /* ------------------------------------- */
 
 .articles_beneficios {
@@ -23,11 +18,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(5px 5px 0px var(--color-8-t));
-}
-
-.articles_beneficios i {
-  display: none;
 }
 
 .articles_beneficios figure {
@@ -89,4 +79,36 @@
 
 .display {
   display: block;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .article_services {
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ------------------------------------- */
+
+  .articles_beneficios {
+    padding: 0;
+    width: 100%;
+  }
+
+  .articles_beneficios article {
+    width: 100%;
+  }
+
+  /* ------------------------------------- */
+
+  .div_sumary {
+    border-radius: 0;
+  }
+
+  .ul_detail {
+    padding: 0 2rem;
+  }
+
 }
