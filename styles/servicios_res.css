@@ -1,0 +1,30 @@
+@media screen and (max-width: 480px) {
+
+  .article_services {
+    padding: 2rem 0 0 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ------------------------------------- */
+
+  .articles_beneficios {
+    padding: 0;
+    width: 100%;
+  }
+
+  .articles_beneficios article {
+    width: 100%;
+  }
+
+  /* ------------------------------------- */
+
+  .div_sumary {
+    border-radius: 0;
+  }
+
+  .ul_detail {
+    padding: 0 2rem;
+  }
+
+}
