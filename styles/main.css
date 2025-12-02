@@ -336,3 +336,8 @@ footer {
   gap: 0;
   padding-top: 1rem;
 }
+
+footer figure {
+  width: 12rem;
+  margin: 1rem auto;
+}
