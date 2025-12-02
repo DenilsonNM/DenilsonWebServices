@@ -189,8 +189,7 @@
 
   <section class="section_pregfrec ancho">
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Cúales son los precios?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail display">
@@ -203,8 +202,7 @@
           class="fa-solid fa-file-pdf"></i> Costos de desarrollo web</a>
     </ul>
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Cuáles son los tiempos de desarrollo?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail">
@@ -216,8 +214,7 @@
         en diseñar y programar).</li>
     </ul>
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Puedo usar mi propio dominio o hosting?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail">
@@ -228,8 +225,7 @@
         diseño y desarrollo.</li>
     </ul>
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Qué necesito para comenzar?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail display">
@@ -240,8 +236,7 @@
           class="fa-solid fa-file-pdf"></i> Requisitos para páginas web</a>
     </ul>
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Mi página aparecerá en Google?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail">
@@ -254,8 +249,7 @@
         búsquedas locales.</li>
     </ul>
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Ofreces soporte después de entregar la página?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail">
@@ -266,8 +260,7 @@
         o por evento.</li>
     </ul>
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Puedo actualizar mi sitio después?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail display">
@@ -284,8 +277,7 @@
           class="fa-solid fa-file-pdf"></i> Estructura de una página web</a>
     </ul>
 
-    <div class="div_sumary wow animate__animated animate__fadeInUp"
-      style="visibility: visible; animation-name: fadeInUp;">
+    <div class="div_sumary wow animate__animated animate__fadeInUp">
       <h3>¿Y si no tengo logo o diseño?</h3> <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="ul_detail">
@@ -315,6 +307,16 @@
   </footer>
 
   <!-- ------------------------------------- -->
+
+  <script>
+    $(".ul_detail").each(function () {
+      const icon = $(this).prev(".div_sumary").find("i");
+
+      if ($(this).is(":visible")) {
+        icon.removeClass("fa-caret-down").addClass("fa-caret-up");
+      }
+    });
+  </script>
 
   <script src="../js/sumarydetail.js">
   </script>
